@@ -1,23 +1,34 @@
-@media screen and (max-width: 768px){
-    .navbar-brand{
-    font-size: 30px;
-    }
+.button-request{
+    border-radius: 30px;
+    border: white;
+    background: linear-gradient(45deg, rgb(102, 221, 94), rgb(87, 199, 230));
+    color: white;
+    padding: 10px;
 }
-
 .nav-link{
-    padding: 0 10px;
+    letter-spacing: 2px;
+    font-size: 1.5px;
+    position: relative;
 }
-
-.nav-link:after{
+.nav-link:hover{
+    color: black;
+    font-weight: bold;
+}
+.nav-link::after{
     content: "";
-    background-color: aqua;
-    height: 3px;
-    width: 0;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
     left: 0;
-    bottom: -10px;
-    transition: 0.2s;
+    height: 2px;
+    width: 100%;
+    background: rgb(39, 180, 220);
+    transform-origin: right;
+    transform: scale(0);
+    transition: 0.4s;
+}
+.nav-link:hover::after{
+    transform-origin: left;
+    transform: scale(1);
 }
 
-.nav-link:hover::after{
-    width: 100%;
-}
