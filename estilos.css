@@ -1,24 +1,32 @@
+.container{
+  margin: 0;
+}
 .button-request{
-    border-radius: 30px;
-    border: white;
-    background: linear-gradient(45deg, rgb(102, 221, 94), rgb(87, 199, 230));
-    color: white;
-    padding: 10px;
+  border-radius: 30px;
+  border: white;
+  background: linear-gradient(45deg, rgb(51, 172, 42), rgb(47, 144, 170));
+  color: white;
+  padding: 10px;
+}
+.button-request:hover{
+  background: linear-gradient(45deg, rgb(102, 221, 94), rgb(87, 199, 230));
 }
 .nav-link{
-    letter-spacing: 2px;
-    font-size: 1.5px;
-    position: relative;
+  letter-spacing: 2px;
+  font-size: 1.5px;
+  position: relative;
+  margin-top: 8px;
 }
 .nav-link:hover{
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
-.nav-link::after{
+@media screen and (min-width: 991px){
+  .nav-link::after{
     content: "";
     position: absolute;
     right: 0;
-    bottom: -15px;
+    bottom: -19px;
     left: 0;
     height: 2px;
     width: 100%;
@@ -26,9 +34,29 @@
     transform-origin: right;
     transform: scale(0);
     transition: 0.4s;
+  }
 }
 .nav-link:hover::after{
-    transform-origin: left;
-    transform: scale(1);
+  transform-origin: left;
+  transform: scale(1);
 }
-
+@media screen and (max-width: 990px){
+  .nav-link::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -19px;
+    left: 0;
+    height: 2px;
+    width: 10%;
+    background: rgb(39, 180, 220);
+    transform-origin: right;
+    transform: scale(0);
+    transition: 0.4s;
+  }
+}
+@media screen and (max-width: 990px){
+  .button-request{
+    margin-top: 30px;
+  }
+}
