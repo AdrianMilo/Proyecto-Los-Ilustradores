@@ -60,3 +60,14 @@
     margin-top: 30px;
   }
 }
+.superior{
+  margin-top: 6rem;
+}
+.btn-google{
+  color: white;
+  background-color: #3b5998;
+}
+.btn-facebook{
+  color: white;
+  background-color: #4285f4;
+}
