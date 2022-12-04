@@ -71,3 +71,7 @@
   color: white;
   background-color: #4285f4;
 }
+.modal-bg{
+  background: linear-gradient(45deg, rgb(102, 221, 94), rgb(87, 199, 230));
+}
+}
